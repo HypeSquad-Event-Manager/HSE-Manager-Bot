@@ -1,11 +1,15 @@
 const { Client } = require('discord.js');
 const TOKENS = require("../private/tokens");
-const client = new Client();
+const bot = new Client();
 
-client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}`);
+bot.on('ready', () => {
+    console.log(`Logged in as ${bot.user.tag}`);
 });
 
 console.log("Starting bot instance.")
+// Discord Login request
+bot.login(TOKENS.CLIENTS.HSE_BOT);
 
-client.login(TOKENS.CLIENTS.HSE_BOT);
+module.exports = { bot };
+
+require("./core/commands");
