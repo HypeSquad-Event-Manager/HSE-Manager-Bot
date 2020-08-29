@@ -57,7 +57,16 @@ $ git push origin master
 ```
 
 ### Events
-*Coming Soon*
+To register one or more events, create a file inside the `app/events` folder and then name it `event_name.js` then, you can code inside, exemple:
+```js
+// Import the bot object
+const { bot } = require("../app");
+
+// Register an event
+bot.on("guildMemberAdd", member => {
+    // Your code here
+})
+```
 
 ## Contributors
 - [@IchiiSama](https://github.com/IchiiSama): Bot Developer
