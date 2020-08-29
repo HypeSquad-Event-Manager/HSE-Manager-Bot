@@ -1,0 +1,22 @@
+{
+  "name": "hse-manager-bot",
+  "version": "1.0.0",
+  "description": "Discord Bot dedicated for the HSE Manager server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypesquad-event-manager/HSE-Manager-Bot.git"
+  },
+  "author": "HSE Manager Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hypesquad-event-manager/HSE-Manager-Bot/issues"
+  },
+  "homepage": "https://github.com/hypesquad-event-manager/HSE-Manager-Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
