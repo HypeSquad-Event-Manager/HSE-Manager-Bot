@@ -13,3 +13,4 @@ bot.login(TOKENS.CLIENTS.HSE_BOT);
 module.exports = { bot };
 
 require("./core/commands");
+require("./core/events");

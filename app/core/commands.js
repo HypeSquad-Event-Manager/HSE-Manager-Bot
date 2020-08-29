@@ -9,6 +9,7 @@ let Commands = new Object();
 console.log("Loading commands...");
 fs.readdir("./app/commands/", (err, files) => {
     if (err) throw err;
+    if (files.length < 1) return console.log("\x1b[41mError:\x1b[0m No command files found");
     for (file of files) {
         if (file.startsWith("-")) continue;
         if (!file.endsWith(".js")) continue;
