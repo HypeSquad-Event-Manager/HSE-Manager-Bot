@@ -1,6 +1,6 @@
 {
   "name": "hse-manager-bot",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Discord Bot dedicated for the HSE Manager server",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/hypesquad-event-manager/HSE-Manager-Bot#readme",
   "dependencies": {
+    "canvas": "^2.6.1",
+    "captcha-canvas": "^2.0.0",
     "discord.js": "^12.3.1",
     "fs": "0.0.1-security"
   }

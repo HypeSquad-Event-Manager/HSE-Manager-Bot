@@ -1,2 +1,8 @@
+# Node Packages
 /node_modules
+
+# Secret Serverside variables
 /private
+
+# Temporary folder used to store images & more
+/temp
