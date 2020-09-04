@@ -70,4 +70,5 @@ bot.on("guildMemberAdd", member => {
 
 ## Contributors
 - [@IchiiSama](https://github.com/IchiiSama): Bot Developer
-- [@FoxyWhite2541](https://github.com/FoxyWhite2541): Project Manager
+- [@FoxyWhite2541](https://github.com/FoxyWhite2541): Project Leader
+- [@ScarVite](https://github.com/ScarVite): Project Leader
