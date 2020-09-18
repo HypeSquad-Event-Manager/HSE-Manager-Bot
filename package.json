@@ -11,7 +11,7 @@
     "url": "git+https://github.com/hypesquad-event-manager/HSE-Manager-Bot.git"
   },
   "author": "HSE Manager Team",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hypesquad-event-manager/HSE-Manager-Bot/issues"
   },
