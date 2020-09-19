@@ -10,7 +10,7 @@ console.log("Loading commands...");
 fs.readdir("./app/commands/", (err, files) => {
     if (err) throw err;
     if (files.length < 1) return console.log("\x1b[31mError:\x1b[0m No command files found");
-    for (file of files) {
+    for (let file of files) {
         if (file.startsWith("-")) continue;
         if (!file.endsWith(".js")) continue;
         const cmd_name = file.split(".")[0];
@@ -32,7 +32,7 @@ bot.on("message", async message => {
     } else if (typeof Commands[command_] == "string") {
         command = new Commands[Commands[command_]]();
     } else return;
-    if (!bot.guilds.cache.get(CONFIG.HSE_MANAGER_GUILD).members.cache.get(message.author.id).roles.cache.get(CONFIG.VERIFIED_ROLE) && !(args[0].toLowerCase() === "verify")) return message.channel.send("Sorry but you can't execute that command before you verify yourself");
+    if (!bot.guilds.cache.get(CONFIG.HSE_MANAGER_GUILD).members.cache.get(message.author.id).roles.cache.get(CONFIG.VERIFIED_ROLE) && args[0].toLowerCase() !== "verify") return message.channel.send("Sorry but you can't execute that command before you verify yourself");
     if (command.permission && !message.member.hasPermission(command.permission)) return message.channel.send(noPermission());
     try {
         await command.execute(message, args);
