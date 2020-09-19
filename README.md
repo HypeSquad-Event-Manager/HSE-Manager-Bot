@@ -51,9 +51,9 @@ module.exports.commands = { command }
 ```
 2. Upload it to Github
 
-Fork This Repository, upload your changed files and open a Pull Request.
+Fork This Repository, upload your changed files and open a Pull Request for the develop branch.
 
-If We Like what you did and think it's a good adition, we will merger your PR.
+If We Like what you did and think it's a good adition, we will merge your PR.
 
 ### Events
 To register one or more events, create a file inside the `app/events` folder and then name it `event_name.js` then, you can code inside, exemple:
