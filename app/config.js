@@ -1,5 +1,5 @@
 module.exports = {
-    PREFIX: "hs!",
+    PREFIX: "hs.",
     HSE_MANAGER_GUILD: "662350530517008388", // HSE Manager Guild ID
     HSE_ROLE: "684489384590180489", // HypeSquad Events role ID
     VERIFIED_ROLE: "663309374072160286", // Verified role ID
