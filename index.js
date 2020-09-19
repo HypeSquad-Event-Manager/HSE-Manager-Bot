@@ -5,3 +5,4 @@ console.log(`Starting "\x1b[33m${package.name}\x1b[0m" app.\n\x1b[32mVersion:\x1
 
 // Start bot instance.
 require("./app/app");
+//test 
