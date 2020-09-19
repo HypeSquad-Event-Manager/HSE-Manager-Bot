@@ -5,7 +5,7 @@ console.log("Loading events...");
 fs.readdir("./app/events", (err, files) => {
     if (err) throw err;
     if (files.length < 1) return console.log("\x1b[31mError:\x1b[0m No event files found");
-    for (file of files) {
+    for (let file of files) {
         if (file.startsWith("-")) continue;
         file.substring(-3, 3);
         require("../events/" + file);

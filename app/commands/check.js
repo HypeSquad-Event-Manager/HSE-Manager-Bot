@@ -1,4 +1,3 @@
-const { bot } = require("../app");
 const { checkHypeSquadBadge } = require("../core/functions/check_badge");
 const { MessageEmbed } = require("discord.js");
 const CONFIG = require("../config");
