@@ -1,4 +1,4 @@
-const { MessageAttachment, MessageEmbed } = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 const { CaptchaGenerator } = require('captcha-canvas');
 const fs = require("fs");
 const CONFIG = require("../../config");
