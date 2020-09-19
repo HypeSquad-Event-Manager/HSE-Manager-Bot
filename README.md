@@ -1,5 +1,5 @@
 # HSE-Manager-Bot
-This bot is made to run on the HSE Manager server. 
+This bot is made to run on the HSE Manager server.
 ## How to run it ?
 1. To run the bot, you need to clone it. Just type:
 ```shell
@@ -79,3 +79,5 @@ bot.on("guildMemberAdd", member => {
 
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot?ref=badge_large)
+
+test
