@@ -1,5 +1,5 @@
 # HSE-Manager-Bot
-This bot is made to run on the HSE Manager server. 
+This bot is made to run on the HSE Manager server.
 ## How to run it ?
 1. To run the bot, you need to clone it. Just type:
 ```shell
