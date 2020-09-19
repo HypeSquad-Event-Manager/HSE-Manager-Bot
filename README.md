@@ -68,7 +68,7 @@ bot.on("guildMemberAdd", member => {
 ```
 
 ## Contributors
-- [@IchiiSama](https://github.com/IchiiSama): Bot Developer
+- [@IchiiDev](https://github.com/IchiiDev): Bot Developer
 - [@FoxyWhite2541](https://github.com/FoxyWhite2541): Project Leader
 - [@ScarVite](https://github.com/ScarVite): Project Leader
 
