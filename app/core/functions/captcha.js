@@ -3,7 +3,6 @@ const { CaptchaGenerator } = require('captcha-canvas');
 const fs = require("fs");
 const CONFIG = require("../../config");
 const { checkHypeSquadBadge } = require("./check_badge");
-const { time } = require("./time");
 const { bot } = require("../../app");
 
 module.exports = {
