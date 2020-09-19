@@ -49,8 +49,10 @@ class command {
 // This is mandatory, the exported object must be the command class
 module.exports.commands = { command }
 ```
-2. Commit it to this repository, explain what is the command.
+2. Upload it to Github
+
 Fork This Repository, upload your changed files and open a Pull Request.
+
 If We Like what you did and think it's a good adition, we will merger your PR.
 
 ### Events
