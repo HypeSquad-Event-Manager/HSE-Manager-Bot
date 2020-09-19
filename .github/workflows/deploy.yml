@@ -2,8 +2,6 @@ name: Deploy
 on:
   push:
     branches: master
-    paths:
-      - "*"
     paths-ignore:
     - '**.md'
 jobs:
