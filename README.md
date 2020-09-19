@@ -30,7 +30,7 @@ To contribute, you can push your changes to the repository. You can contribute t
 ### Commands
 1. Add a file named `command_name.js` in the `app/commands` folder, then follow this syntax into the file:
 ```js
-// Exemple import if you need the bot object
+// Example import if you need the bot object
 const { bot } = require("../app"); 
 
 // Change command for the name of the command, exemple: help, ban, ...
@@ -49,12 +49,11 @@ class command {
 // This is mandatory, the exported object must be the command class
 module.exports.commands = { command }
 ```
-2. Commit it to this repository, explain what is the command.
-```shell
-$ git add .
-$ git commit -m "Added help command"
-$ git push origin master
-```
+2. Upload it to Github
+
+Fork This Repository, upload your changed files and open a Pull Request for the develop branch.
+
+If We Like what you did and think it's a good adition, we will merge your PR.
 
 ### Events
 To register one or more events, create a file inside the `app/events` folder and then name it `event_name.js` then, you can code inside, exemple:
@@ -69,6 +68,14 @@ bot.on("guildMemberAdd", member => {
 ```
 
 ## Contributors
-- [@IchiiSama](https://github.com/IchiiSama): Bot Developer
+- [@IchiiDev](https://github.com/IchiiDev): Bot Developer
 - [@FoxyWhite2541](https://github.com/FoxyWhite2541): Project Leader
 - [@ScarVite](https://github.com/ScarVite): Project Leader
+
+## Badges
+[![DeepScan grade](https://deepscan.io/api/teams/10219/projects/13905/branches/246157/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=10219&pid=13905&bid=246157)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot?ref=badge_shield)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot?ref=badge_large)
