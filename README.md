@@ -71,3 +71,6 @@ bot.on("guildMemberAdd", member => {
 - [@IchiiSama](https://github.com/IchiiSama): Bot Developer
 - [@FoxyWhite2541](https://github.com/FoxyWhite2541): Project Leader
 - [@ScarVite](https://github.com/ScarVite): Project Leader
+
+## Badges
+[![DeepScan grade](https://deepscan.io/api/teams/10219/projects/13905/branches/246157/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=10219&pid=13905&bid=246157)
