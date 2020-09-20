@@ -5,7 +5,7 @@ on:
     paths-ignore:
     - '**.md'
 jobs:
-  DePloY:
+  Deploy:
     runs-on: ubuntu-18.04
     steps:
       - name: Deploying...
