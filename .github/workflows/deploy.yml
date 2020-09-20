@@ -18,6 +18,7 @@ jobs:
             pm2 stop hse-manager-bot
             cd /data/bots/hse-manager
             git reset --hard
+            rm -rf ./node_modules/
             git pull
             npm install
             pm2 reload hse-manager-bot
