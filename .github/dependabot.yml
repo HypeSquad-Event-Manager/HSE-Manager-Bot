@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "ScarVite"
+    commit-message:
+      prefix: "🔼"
+    labels:
+      - "dependencies"
+    open-pull-requests-limit: 15

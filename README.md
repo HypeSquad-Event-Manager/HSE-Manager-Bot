@@ -73,7 +73,9 @@ bot.on("guildMemberAdd", member => {
 - [@ScarVite](https://github.com/ScarVite): Project Leader
 
 ## Badges
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b513ca3dbae5469bbf4b4767e0f49942)](https://app.codacy.com/gh/HypeSquad-Event-Manager/HSE-Manager-Bot?utm_source=github.com&utm_medium=referral&utm_content=HypeSquad-Event-Manager/HSE-Manager-Bot&utm_campaign=Badge_Grade_Dashboard)
 [![DeepScan grade](https://deepscan.io/api/teams/10219/projects/13905/branches/246157/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=10219&pid=13905&bid=246157)
+[![Deploy](https://github.com/HypeSquad-Event-Manager/HSE-Manager-Bot/workflows/Deploy/badge.svg?branch=master)](https://github.com/HypeSquad-Event-Manager/HSE-Manager-Bot/actions?query=workflow%3ADeploy)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot?ref=badge_shield)
 [![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.carloscuesta.me)
 
