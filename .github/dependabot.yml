@@ -8,7 +8,6 @@ updates:
       - "ScarVite"
     commit-message:
       prefix: "🔼"
-      prefix-develop: "🔼"
     labels:
       - "dependencies"
     open-pull-requests-limit: 15
