@@ -4,11 +4,11 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    assignees:
+    reviewers:
       - "ScarVite"
     commit-message:
       prefix: "🔼"
-      prefix-development: "🔼"
+      prefix-develop: "🔼"
     labels:
       - "dependencies"
     open-pull-requests-limit: 15
