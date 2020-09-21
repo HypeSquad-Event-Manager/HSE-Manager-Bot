@@ -75,6 +75,7 @@ bot.on("guildMemberAdd", member => {
 ## Badges
 [![DeepScan grade](https://deepscan.io/api/teams/10219/projects/13905/branches/246157/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=10219&pid=13905&bid=246157)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot?ref=badge_shield)
+[![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.carloscuesta.me)
 
 
 ## License
