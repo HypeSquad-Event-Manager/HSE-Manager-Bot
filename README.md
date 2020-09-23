@@ -1,6 +1,7 @@
 # HSE-Manager-Bot
 This bot is made to run on the HSE Manager server.
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/89fdf42bcfe643b686bfc12654f44fa6)](https://app.codacy.com/gh/HypeSquad-Event-Manager/HSE-Manager-Bot?utm_source=github.com&utm_medium=referral&utm_content=HypeSquad-Event-Manager/HSE-Manager-Bot&utm_campaign=Badge_Grade)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b513ca3dbae5469bbf4b4767e0f49942)](https://app.codacy.com/gh/HypeSquad-Event-Manager/HSE-Manager-Bot?utm_source=github.com&utm_medium=referral&utm_content=HypeSquad-Event-Manager/HSE-Manager-Bot&utm_campaign=Badge_Grade_Dashboard)
 [![DeepScan grade](https://deepscan.io/api/teams/10219/projects/13905/branches/246157/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=10219&pid=13905&bid=246157)
 [![CodeFactor](https://www.codefactor.io/repository/github/hypesquad-event-manager/hse-manager-bot/badge)](https://www.codefactor.io/repository/github/hypesquad-event-manager/hse-manager-bot)
