@@ -14,3 +14,5 @@ module.exports = { bot };
 
 require("./core/commands");
 require("./core/events");
+const { Twitter } = require("./core/twitter");
+Twitter();
