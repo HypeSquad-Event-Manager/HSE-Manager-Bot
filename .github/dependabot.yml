@@ -6,6 +6,7 @@ updates:
       interval: "weekly"
     reviewers:
       - "ScarVite"
+      - "IchiiDev"
     commit-message:
       prefix: "🔼"
     labels:
