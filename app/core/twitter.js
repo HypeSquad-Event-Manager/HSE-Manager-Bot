@@ -15,7 +15,7 @@ async function Twitter() {
     });
 
     let connected;
-    await api.get('account/verify_credentials', { skip_status: true }).catch(function (err) {
+    await api.get('account/verify_credentials', { skip_status: true }).catch(function () {
         console.log("\x1b[31mError:\x1b[0m Cannot connect to Twitter, Tweets functions disabled.");
         connected = false;
     }).then(result => {
