@@ -16,6 +16,13 @@ $ npm install
 module.exports = {
     CLIENTS: {
         HSE_BOT: "Put the bot token here"
+    },
+    TWITTER: {
+        CONSUMER_KEY: "",
+        CONSUMER_SECRET: "",
+        ACCESS_TOKEN: "",
+        ACCESS_TOKEN_SECRET: ""
+        // Fill in with your Twitter API Credentials (If not needed for dev purpose, the Twitter functions will not launch and just throw a little error message.)
     }
 }
 ``` 
