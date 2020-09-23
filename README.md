@@ -89,6 +89,7 @@ bot.on("guildMemberAdd", member => {
 - [@ScarVite](https://github.com/ScarVite): Project Leader
 - [@IchiiDev](https://github.com/IchiiDev): Bot Developer
 - [@Zallom](https://github.com/Zallom): Bot Developer
+- [@HSE-Manager](https://github.com/HSE-Manager): Quality Stuff (Bot)
 
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot?ref=badge_large)
