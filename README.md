@@ -1,7 +1,7 @@
 # HSE-Manager-Bot
 This bot is made to run on the HSE Manager server.
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b513ca3dbae5469bbf4b4767e0f49942)](https://app.codacy.com/gh/HypeSquad-Event-Manager/HSE-Manager-Bot?utm_source=github.com&utm_medium=referral&utm_content=HypeSquad-Event-Manager/HSE-Manager-Bot&utm_campaign=Badge_Grade_Dashboard)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/3850013bb0ca4a1580b62a15635472b7)](https://www.codacy.com/gh/HypeSquad-Event-Manager/HSE-Manager-Bot/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=HypeSquad-Event-Manager/HSE-Manager-Bot&amp;utm_campaign=Badge_Grade)
 [![DeepScan grade](https://deepscan.io/api/teams/10219/projects/13905/branches/246157/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=10219&pid=13905&bid=246157)
 [![CodeFactor](https://www.codefactor.io/repository/github/hypesquad-event-manager/hse-manager-bot/badge)](https://www.codefactor.io/repository/github/hypesquad-event-manager/hse-manager-bot)
 [![Deploy](https://github.com/HypeSquad-Event-Manager/HSE-Manager-Bot/workflows/Deploy/badge.svg?branch=master)](https://github.com/HypeSquad-Event-Manager/HSE-Manager-Bot/actions?query=workflow%3ADeploy)
