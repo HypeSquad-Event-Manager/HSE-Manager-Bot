@@ -3,7 +3,7 @@ const TOKENS = require("../private/tokens");
 const bot = new Client();
 
 bot.on('ready', () => {
-    console.log(`Logged in as ${bot.user.tag}`);
+    console.log(`Logged in as ${bot.user.tag}.`);
 });
 
 console.log("Starting bot instance.")
