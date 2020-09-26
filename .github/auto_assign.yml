@@ -1,5 +1,6 @@
+# We Currently do not need this, as we are assigned automatically as Codeowners
 # Set to true to add reviewers to pull requests
-addReviewers: true
+addReviewers: false
 
 # Set to true to add assignees to pull requests
 addAssignees: true

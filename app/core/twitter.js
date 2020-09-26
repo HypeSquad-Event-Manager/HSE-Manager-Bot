@@ -31,7 +31,7 @@ async function Twitter() {
         if (CONFIG.TWITTER_ACCOUNT_ID == tweet.user.id_str) {
             if (tweet.in_reply_to_status_id) return;
             if (tweet.text.split(" ")[tweet.text.split(" ").length - 1].match(/https:\/\/t.co\/([^\s]+)/g) != null) {
-                bot.guilds.cache.get(CONFIG.HSE_MANAGER_GUILD).channels.cache.get(CONFIG.TWITTER_CHANNEL_ID).send(`||https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}||`);
+                bot.guilds.cache.get(CONFIG.HSE_MANAGER_GUILD).channels.cache.get(CONFIG.TWITTER_CHANNEL_ID).send(`https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`);
             } else {
                 let TweetEmbed = new MessageEmbed().setAuthor(`${tweet.user.name} (@${tweet.user.screen_name})`, tweet.user.profile_image_url).setDescription(tweet.text + `\n\n[Tweet Link](https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str})`).setFooter("Twitter", "https://images-ext-1.discordapp.net/external/bXJWV2Y_F3XSra_kEqIYXAAsI3m1meckfLhYuWzxIfI/https/abs.twimg.com/icons/apple-touch-icon-192x192.png").setColor("#38A1F3");
                 bot.guilds.cache.get(CONFIG.HSE_MANAGER_GUILD).channels.cache.get(CONFIG.TWITTER_CHANNEL_ID).send(TweetEmbed);
