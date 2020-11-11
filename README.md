@@ -1,7 +1,7 @@
 # HSE-Manager-Bot
 This bot is made to run on the HSE Manager server.
 
-
+[![Discord Status](https://img.shields.io/endpoint?url=https://api.scarvite.de/dc/StatusBadge/622505991098990602?simple=true&logo=discord&logoColor=white)](https://discord.gg/szrr7mc) 
 [![DeepScan grade](https://deepscan.io/api/teams/10219/projects/13905/branches/246157/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=10219&pid=13905&bid=246157)
 [![CodeFactor](https://www.codefactor.io/repository/github/hypesquad-event-manager/hse-manager-bot/badge)](https://www.codefactor.io/repository/github/hypesquad-event-manager/hse-manager-bot)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/3850013bb0ca4a1580b62a15635472b7)](https://www.codacy.com/gh/HypeSquad-Event-Manager/HSE-Manager-Bot/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=HypeSquad-Event-Manager/HSE-Manager-Bot&amp;utm_campaign=Badge_Grade)
@@ -32,17 +32,17 @@ module.exports = {
         CONSUMER_SECRET: "",
         ACCESS_TOKEN: "",
         ACCESS_TOKEN_SECRET: ""
-        // Fill in with your Twitter API Credentials (If not needed for dev purpose, the Twitter functions will not launch and just throw a little error message.)
+        // Fill those with your Twitter API Credentials (If you don't need The functionality, leave those empty.)
     }
 }
 ``` 
 4. Then you can run the app with the following command:
 ```shell
-$ node index
+$ npm start
 ```
 
 ## How to contribute ?
-To contribute, you can push your changes to the repository. You can contribute to commands or events triggered by the bot:
+To contribute, you can commit your changes to the repository. You can contribute to commands or events triggered by the bot:
 
 ### Commands
 1. Add a file named `command_name.js` in the `app/commands` folder, then follow this syntax into the file:
@@ -68,7 +68,7 @@ module.exports.commands = { command }
 ```
 2. Upload it to Github
 
-Fork This Repository, upload your changed files and open a Pull Request for the develop branch.
+Fork This Repository, upload your changed files and open a Pull Request targeted at the develop branch.
 
 If We Like what you did and think it's a good adition, we will merge your PR.
 
