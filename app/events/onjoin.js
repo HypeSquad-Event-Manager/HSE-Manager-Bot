@@ -6,5 +6,5 @@ const { checkHypeSquadBadge } = require("../core/functions/check_badge");
 
 bot.on("guildMemberAdd", member => {
     if (member.guild.id != CONFIG.HSE_MANAGER_GUILD || member.user.bot) return;
-    captchaSystem(member);
+    checkHypeSquadBadge(member);
 });
