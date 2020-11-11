@@ -1,7 +1,6 @@
 const { Message } = require("discord.js");
 const { bot } = require("../app");
 const CONFIG = require("../config");
-const { captchaSystem } = require("../core/functions/captcha");
 const { checkHypeSquadBadge } = require("../core/functions/check_badge");
 
 bot.on("guildMemberAdd", member => {
