@@ -32,7 +32,6 @@ bot.on("message", async message => {
     } else if (typeof Commands[command_] == "string") {
         command = new Commands[Commands[command_]]();
     } else return;
-    if (!bot.guilds.cache.get(CONFIG.HSE_MANAGER_GUILD).members.cache.get(message.author.id).roles.cache.get(CONFIG.VERIFIED_ROLE) && args[0].toLowerCase() !== "verify") return message.channel.send("Sorry but you can't execute that command before you verify yourself");
     if (command.permission && !message.member.hasPermission(command.permission)) return message.channel.send(noPermission());
     try {
         await command.execute(message, args);
