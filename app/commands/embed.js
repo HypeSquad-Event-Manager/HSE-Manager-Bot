@@ -140,20 +140,11 @@ class msg {
 									function d_1() {
 										message.channel.send(new MessageEmbed().setTitle("Step 7 | Footer").setDescription("What image do you want to put on the footer of your embed?\n**(Enter a valid URL or Image)**").setColor("8b9be1").setTimestamp());
 										message.channel.awaitMessages(filter, { max: 1, time: 999999999 }).then(collected => {
-											if (collected.first().content.startsWith("https://cdn.discordapp.com/") || collected.first().content.startsWith("https://media.discordapp.net/")) {
-												Share.upload(collected.first().content).then(res => {
-													if (res.err !== true) Embed.setFooter(footer, res.url);
-													else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-												});
-												Color();
-											} else if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
+											if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
 												Embed.setFooter(footer, collected.first().content);
 												Color();
 											} else if (collected.first().attachments.size > 0) {
-												Share.upload(collected.first().attachments.first().url).then(res => {
-													if (res.err !== true) Embed.setFooter(footer, res.url);
-													else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-												});
+												Embed.setFooter(footer, collected.first().attachments.first().url);
 												Color();
 											} else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
 										}).catch(() => message.channel.send(new MessageEmbed().setTitle("Canceled !").setDescription("You took too long to respond!").setColor("e74c3c").setTimestamp()));
@@ -174,20 +165,11 @@ class msg {
 								function d_1() {
 									message.channel.send(new MessageEmbed().setTitle("Step 6 | Image").setDescription("What image do you want to put on your embed?\n**(Enter a valid URL or Image)**").setColor("8b9be1").setTimestamp());
 									message.channel.awaitMessages(filter, { max: 1, time: 999999999 }).then(collected => {
-										if (collected.first().content.startsWith("https://cdn.discordapp.com/") || collected.first().content.startsWith("https://media.discordapp.net/")) {
-											Share.upload(collected.first().content).then(res => {
-												if (res.err !== true) Embed.setImage(res.url);
-												else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-											});
-											Footer();
-										} else if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
+										if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
 											Embed.setImage(collected.first().content);
 											Footer();
 										} else if (collected.first().attachments.size > 0) {
-											Share.upload(collected.first().attachments.first().url).then(res => {
-												if (res.err !== true) Embed.setImage(res.url);
-												else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-											});
+											Embed.setImage(collected.first().attachments.first().url);
 											Footer();
 										} else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
 									}).catch(() => message.channel.send(new MessageEmbed().setTitle("Canceled !").setDescription("You took too long to respond!").setColor("e74c3c").setTimestamp()));
@@ -207,20 +189,11 @@ class msg {
 								function d_1() {
 									message.channel.send(new MessageEmbed().setTitle("Step 5 | Thumbnail").setDescription("Which thumbnail do you want to put on your embed?\n**(Enter a valid URL or Image)**").setColor("8b9be1").setTimestamp());
 									message.channel.awaitMessages(filter, { max: 1, time: 999999999 }).then(collected => {
-										if (collected.first().content.startsWith("https://cdn.discordapp.com/") || collected.first().content.startsWith("https://media.discordapp.net/")) {
-											Share.upload(collected.first().content).then(res => {
-												if (res.err !== true) Embed.setThumbnail(res.url);
-												else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-											});
-											Image();
-										} else if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
+										if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
 											Embed.setThumbnail(collected.first().content);
 											Image();
 										} else if (collected.first().attachments.size > 0) {
-											Share.upload(collected.first().attachments.first().url).then(res => {
-												if (res.err !== true) Embed.setThumbnail(res.url);
-												message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-											});
+											Embed.setThumbnail(collected.first().attachments.first().url);
 											Image();
 										} else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
 									}).catch(() => message.channel.send(new MessageEmbed().setTitle("Canceled !").setDescription("You took too long to respond!").setColor("e74c3c").setTimestamp()));
@@ -384,20 +357,11 @@ class msg {
 									function d_1() {
 										message.channel.send(new MessageEmbed().setTitle("Step 1:1 | Author Image (Specific)").setDescription("What image do you want to put on the author of your embed?\n**(Enter a valid URL or Image)**").setColor("8b9be1").setTimestamp());
 										message.channel.awaitMessages(filter, { max: 1, time: 999999999 }).then(collected => {
-											if (collected.first().content.startsWith("https://cdn.discordapp.com/") || collected.first().content.startsWith("https://media.discordapp.net/")) {
-												Share.upload(collected.first().content).then(res => {
-													if (res.err !== true) Embed.setAuthor(author, res.url);
-													else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-												});
-												AuthorURL(author, collected.first().content);
-											} else if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
+											if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
 												Embed.setAuthor(author, collected.first().content);
 												AuthorURL(author, collected.first().content);
 											} else if (collected.first().attachments.size > 0) {
-												Share.upload(collected.first().attachments.first().url).then(res => {
-													if (res.err !== true) Embed.setAuthor(author, res.url);
-													else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-												});
+												Embed.setAuthor(author, collected.first().attachments.first().url);
 												AuthorURL(author, collected.first().content);
 											} else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
 										}).catch(() => message.channel.send(new MessageEmbed().setTitle("Canceled !").setDescription("You took too long to respond!").setColor("e74c3c").setTimestamp()));
@@ -647,20 +611,11 @@ class msg {
 									function d_1() {
 										message.channel.send(new MessageEmbed().setTitle("Step 7 | Footer").setDescription("What image do you want to put on the footer of your embed?\n**(Enter a valid URL or Image)**").setColor("8b9be1").setTimestamp());
 										message.channel.awaitMessages(filter, { max: 1, time: 999999999 }).then(collected => {
-											if (collected.first().content.startsWith("https://cdn.discordapp.com/") || collected.first().content.startsWith("https://media.discordapp.net/")) {
-												Share.upload(collected.first().content).then(res => {
-													if (res.err !== true) Embed.setFooter(footer, res.url);
-													else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-												});
-												Color();
-											} else if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
+											if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
 												Embed.setFooter(footer, collected.first().content);
 												Color();
 											} if (collected.first().attachments.size > 0) {
-												Share.upload(collected.first().attachments.first().url).then(res => {
-													if (res.err !== true) Embed.setFooter(footer, res.url);
-													else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-												});
+												Embed.setFooter(footer, collected.first().attachments.first().url);
 												Color();
 											} else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
 										}).catch(() => message.channel.send(new MessageEmbed().setTitle("Canceled !").setDescription("You took too long to respond!").setColor("e74c3c").setTimestamp()));
@@ -681,20 +636,11 @@ class msg {
 								function d_1() {
 									message.channel.send(new MessageEmbed().setTitle("Step 6 | Image").setDescription("What image do you want to put on your embed?\n**(Enter a valid URL or Image)**").setColor("8b9be1").setTimestamp());
 									message.channel.awaitMessages(filter, { max: 1, time: 999999999 }).then(collected => {
-										if (collected.first().content.startsWith("https://cdn.discordapp.com/") || collected.first().content.startsWith("https://media.discordapp.net/")) {
-											Share.upload(collected.first().content).then(res => {
-												if (res.err !== true) Embed.setImage(res.url);
-												else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-											});
-											Footer();
-										} else if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
+										if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
 											Embed.setImage(collected.first().content);
 											Footer();
 										} else if (collected.first().attachments.size > 0) {
-											Share.upload(collected.first().attachments.first().url).then(res => {
-												if (res.err !== true) Embed.setImage(res.url);
-												else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-											});
+											Embed.setImage(collected.first().attachments.first().url);
 											Footer();
 										} else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
 									}).catch(() => message.channel.send(new MessageEmbed().setTitle("Canceled !").setDescription("You took too long to respond!").setColor("e74c3c").setTimestamp()));
@@ -714,20 +660,11 @@ class msg {
 								function d_1() {
 									message.channel.send(new MessageEmbed().setTitle("Step 5 | Thumbnail").setDescription("Which thumbnail do you want to put on your embed?\n**(Enter a valid URL or Image)**").setColor("8b9be1").setTimestamp());
 									message.channel.awaitMessages(filter, { max: 1, time: 999999999 }).then(collected => {
-										if (collected.first().content.startsWith("https://cdn.discordapp.com/") || collected.first().content.startsWith("https://media.discordapp.net/")) {
-											Share.upload(collected.first().content).then(res => {
-												if (res.err !== true) Embed.setThumbnail(res.url);
-												else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-											});
-											Image();
-										} else if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
+										if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
 											Embed.setThumbnail(collected.first().content);
 											Image();
 										} else if (collected.first().attachments.size > 0) {
-											Share.upload(collected.first().attachments.first().url).then(res => {
-												if (res.err !== true) Embed.setThumbnail(res.url);
-												else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-											});
+											Embed.setThumbnail(collected.first().attachments.first().url);
 											Image();
 										} else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
 									}).catch(() => message.channel.send(new MessageEmbed().setTitle("Canceled !").setDescription("You took too long to respond!").setColor("e74c3c").setTimestamp()));
@@ -891,20 +828,11 @@ class msg {
 									function d_1() {
 										message.channel.send(new MessageEmbed().setTitle("Step 1:1 | Author Image (Specific)").setDescription("What image do you want to put on the author of your embed?\n**(Enter a valid URL or Image)**").setColor("8b9be1").setTimestamp());
 										message.channel.awaitMessages(filter, { max: 1, time: 999999999 }).then(collected => {
-											if (collected.first().content.startsWith("https://cdn.discordapp.com/") || collected.first().content.startsWith("https://media.discordapp.net/")) {
-												Share.upload(collected.first().content).then(res => {
-													if (res.err !== true) Embed.setAuthor(author, res.url);
-													else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-												});
-												AuthorURL(author, collected.first().content);
-											} else if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
+											if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
 												Embed.setAuthor(author, collected.first().content);
 												AuthorURL(author, collected.first().content);
 											} else if (collected.first().attachments.size > 0) {
-												Share.upload(collected.first().attachments.first().url).then(res => {
-													if (res.err !== true) Embed.setAuthor(author, res.url);
-													else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
-												});
+												Embed.setAuthor(author, collected.first().attachments.first().url);
 												AuthorURL(author, collected.first().content);
 											} else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
 										}).catch(() => message.channel.send(new MessageEmbed().setTitle("Canceled !").setDescription("You took too long to respond!").setColor("e74c3c").setTimestamp()));
