@@ -409,7 +409,6 @@ class msg {
 						else if (wherepass === "9" || wherepass === "File" || wherepass === "file" || wherepass === "Files" || wherepass === "files" || wherepass === "Attachement" || wherepass === "Attachements" || wherepass === "attachement" || wherepass === "attachements") Attachement();
 						else if (wherepass === "10" || wherepass === "timestamp" || wherepass === "Timestamp") Timestamp();
 						else if (wherepass === "11" || wherepass === "message" || wherepass === "Message") MessageSend();
-						else if (wherepass === "12" || wherepass === "send" || wherepass === "Send") Send();
 						else Send();
 					}
 					message.channel.awaitMessages(filter, { max: 1, time: 999999999 }).then(collected => {
@@ -614,7 +613,7 @@ class msg {
 											if (collected.first().content.match(/^https?:\/\/.+\./) || collected.first().content.match(/^http?:\/\/.+\./)) {
 												Embed.setFooter(footer, collected.first().content);
 												Color();
-											} if (collected.first().attachments.size > 0) {
+											} else if (collected.first().attachments.size > 0) {
 												Embed.setFooter(footer, collected.first().attachments.first().url);
 												Color();
 											} else message.channel.send(new MessageEmbed().setTitle("Error !").setDescription("Sorry but this is not a valid URL or Image.").setColor("e74c3c").setTimestamp()).then(() => d_1());
