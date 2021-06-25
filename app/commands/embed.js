@@ -397,8 +397,7 @@ class msg {
 						}
 					}
 					function Pass(wherepass = null) {
-						if (wherepass === null) Send();
-						else if (wherepass === "1" || wherepass === "author" || wherepass === "Author" || wherepass === "Auteur") Author();
+						if (wherepass === "1" || wherepass === "author" || wherepass === "Author" || wherepass === "Auteur") Author();
 						else if (wherepass === "2" || wherepass === "title" || wherepass === "Title") Title();
 						else if (wherepass === "3" || wherepass === "description" || wherepass === "Description") Description();
 						else if (wherepass === "4" || wherepass === "field" || wherepass === "Field") Filed();
