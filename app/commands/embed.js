@@ -397,7 +397,8 @@ class msg {
 						}
 					}
 					function Pass(wherepass = null) {
-						if (wherepass === "1" || wherepass === "author" || wherepass === "Author" || wherepass === "Auteur") Author();
+						if (wherepass === null) Send();
+						else if (wherepass === "1" || wherepass === "author" || wherepass === "Author" || wherepass === "Auteur") Author();
 						else if (wherepass === "2" || wherepass === "title" || wherepass === "Title") Title();
 						else if (wherepass === "3" || wherepass === "description" || wherepass === "Description") Description();
 						else if (wherepass === "4" || wherepass === "field" || wherepass === "Field") Filed();
@@ -898,7 +899,6 @@ class msg {
 						else if (wherepass === "9" || wherepass === "File" || wherepass === "file" || wherepass === "Files" || wherepass === "files" || wherepass === "Attachement" || wherepass === "Attachements" || wherepass === "attachement" || wherepass === "attachements") Attachement();
 						else if (wherepass === "10" || wherepass === "timestamp" || wherepass === "Timestamp") Timestamp();
 						else if (wherepass === "11" || wherepass === "message" || wherepass === "Message") MessageSend();
-						else if (wherepass === "12" || wherepass === "send" || wherepass === "Send") Send();
 						else Send();
 					}
 					function d_21() {
