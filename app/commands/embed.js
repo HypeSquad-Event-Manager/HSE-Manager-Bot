@@ -941,7 +941,7 @@ class msg {
 				} else message.channel.send(new MessageEmbed().setTitle(`Help : ${Config.PREFIX}msg edit`).setDescription(`Command to edit a message already posted by the bot <@${bot.user.id}>.`).addField("**Infomations :**", `**> Permission :** ${this.permission}\n**> Argument(s)** **1:** *Message link present on your server.*`).addField("**Example :**", `\`${Config.PREFIX}msg edit https://discord.com/channels/264363165855252480/286202340782899210/640698942396432405\``).setColor("8b9be1").setTimestamp());
 				break;
 			}
-		} else message.channel.send(new MessageEmbed().setTitle(`Help : ${Config.PREFIX}msg`).setDescription("Message command").addField("**Infomations :**", `**> Permission :** ${this.permission}\n**> Argument(s)** **1:** *Sub-command <post | edit>.*\n **2** *Sub-command argument.*`).addField("**Example :**", `\`${Config.PREFIX}msg post 581223459896426496\`\n\`${Config.PREFIX}msg edit https://discord.com/channels/264363165855252480/286202340782899210/640698942396432405\``).setColor("8b9be1").setTimestamp());
+		} else message.channel.send(new MessageEmbed().setTitle(`Help : ${Config.PREFIX}msg`).setDescription("Message command").addField("**Infomations :**", `**> Permission :** ${this.permission}\n**> Argument(s)** **1:** *Sub-command <post | edit>.*\n **2:** *Sub-command argument.*`).addField("**Example :**", `\`${Config.PREFIX}msg post 581223459896426496\`\n\`${Config.PREFIX}msg edit https://discord.com/channels/264363165855252480/286202340782899210/640698942396432405\``).setColor("8b9be1").setTimestamp());
 	}
 }
 module.exports.commands = { msg };

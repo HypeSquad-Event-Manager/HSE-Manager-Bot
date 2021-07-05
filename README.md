@@ -8,7 +8,7 @@ This bot is made to run on the HSE Manager server.
 [![Deploy](https://github.com/HypeSquad-Event-Manager/HSE-Manager-Bot/workflows/Deploy/badge.svg?branch=master)](https://github.com/HypeSquad-Event-Manager/HSE-Manager-Bot/actions?query=workflow%3ADeploy)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FHypeSquad-Event-Manager%2FHSE-Manager-Bot?ref=badge_shield)
 [![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.carloscuesta.me)
-
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J53RCCY)
 
 ## How to run it ?
 1. To run the bot, you need to clone it. Just type:
