@@ -19,7 +19,7 @@
   "homepage": "https://github.com/hypesquad-event-manager/HSE-Manager-Bot#readme",
   "dependencies": {
     "canvas": "^2.6.1",
-    "discord.js": "^12.3.1",
+    "discord.js": "^13.6.0",
     "fs": "0.0.1-security",
     "twit": "^2.2.11"
   }
